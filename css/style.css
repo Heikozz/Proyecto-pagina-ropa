@@ -1,0 +1,139 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  font-family: "Bebas Neue", cursive;
+}
+/* MOBILE FIRST 375px */
+/* HEADER */
+/* Logo Hot dreams  */
+.logo {
+  width: 200px;
+  height: 130px;
+}
+/* logo hot dreams final */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header ul {
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+}
+
+.header li {
+  margin: 10px;
+}
+
+.header a{
+  color: black;
+  text-decoration: none;
+}
+
+.header a:hover, .footer a:hover{
+  color: #414770;
+  font-weight: bold;
+}
+
+/* BANNER INICIO */
+.bannerchico {
+  width: 200px;
+  height: 200px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  background-color: #1b0102;
+}
+/* BANNER FINAL */
+/* MAIN INICIO */
+.textocentrado {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* SECCION PRODUCTOS */
+.producto1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.flex2{
+  display: flex;
+  flex-direction: column;
+}
+
+/* GALERIA IMAGENES */
+.grid-container {  display: grid;
+  grid-template-columns: 1fr 1.1fr 0.9fr;
+  grid-template-rows: 0fr 2.7fr 1fr 0fr;
+  /* gap: 0px 0px; */
+  /* grid-auto-flow: row; */
+  justify-items: stretch;
+  grid-template-areas:
+    "NAV-Y-LOGO NAV-Y-LOGO NAV-Y-LOGO"
+    "galeria-de-imagenes- galeria-de-imagenes- galeria-de-imagenes-"
+    "galeria-de-imagenes- galeria-de-imagenes- galeria-de-imagenes-"
+    "FOOTER FOOTER FOOTER";
+}
+
+.NAV-Y-LOGO { grid-area: NAV-Y-LOGO; }
+
+
+.galeria-de-imagenes- { grid-area: galeria-de-imagenes-;}
+
+
+
+
+
+.FOOTER { grid-area: FOOTER; }
+
+
+
+/* FOOTER */
+.footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colorblanco{
+  color: white;
+}
+
+.footer a{
+  color: aqua;
+  text-decoration: none;
+}
+
+/* MEDIAQUARY PC 1024px */
+@media(min-width: 1024px){
+  .header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex2{
+    flex-direction: row;
+  }
+
+  .producto1{
+    margin-left: 30px;
+  }
+}
